@@ -1,0 +1,3 @@
+ID;employee_ID;course_ID;startDate;endDate;estimatedCost;currency_code;status;justification;rejectionReason;createdBy
+d4318bd3-1111-4111-a111-111111111111;E001;c3218ad2-1111-4111-a111-111111111111;2026-11-01;2026-11-05;1500.00;USD;SUBMITTED;Need for upcoming ABAP Cloud migration project;;employee
+d4318bd3-2222-4222-a222-222222222222;E002;c3218ad2-2222-4222-a222-222222222222;2026-12-01;2026-12-03;2200.00;USD;NEW;BTP Integration design skills needed;;employee

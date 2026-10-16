@@ -1,0 +1,69 @@
+{
+  "xsappname": "training-request-mgmt",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.EmployeeRole",
+      "description": "Access to Employee Service"
+    },
+    {
+      "name": "$XSAPPNAME.ManagerRole",
+      "description": "Access to Manager Service"
+    },
+    {
+      "name": "$XSAPPNAME.AdminRole",
+      "description": "Access to Admin Service"
+    }
+  ],
+  "authorities": [
+    "$XSAPPNAME.EmployeeRole",
+    "$XSAPPNAME.ManagerRole",
+    "$XSAPPNAME.AdminRole"
+  ],
+  "role-templates": [
+    {
+      "name": "EmployeeRoleTemplate",
+      "description": "Role Template for Employees",
+      "scope-references": [
+        "$XSAPPNAME.EmployeeRole"
+      ]
+    },
+    {
+      "name": "ManagerRoleTemplate",
+      "description": "Role Template for Managers",
+      "scope-references": [
+        "$XSAPPNAME.ManagerRole"
+      ]
+    },
+    {
+      "name": "AdminRoleTemplate",
+      "description": "Role Template for Admins",
+      "scope-references": [
+        "$XSAPPNAME.AdminRole"
+      ]
+    }
+  ],
+  "role-collections": [
+    {
+      "name": "TrainingEmployeeRoleCollection",
+      "description": "Role Collection for Employees",
+      "role-template-references": [
+        "$XSAPPNAME.EmployeeRoleTemplate"
+      ]
+    },
+    {
+      "name": "TrainingManagerRoleCollection",
+      "description": "Role Collection for Managers",
+      "role-template-references": [
+        "$XSAPPNAME.ManagerRoleTemplate"
+      ]
+    },
+    {
+      "name": "TrainingAdminRoleCollection",
+      "description": "Role Collection for Admins",
+      "role-template-references": [
+        "$XSAPPNAME.AdminRoleTemplate"
+      ]
+    }
+  ]
+}

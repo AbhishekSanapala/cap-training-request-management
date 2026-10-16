@@ -1,0 +1,4 @@
+ID;name;email;department;annualBudget;spentBudget;currency_code;manager_ID
+E001;John Doe;john.doe@demo.com;Engineering;5000.00;1000.00;USD;M001
+E002;Jane Smith;jane.smith@demo.com;Finance;4000.00;0.00;USD;M001
+M001;Alice Boss;alice.boss@demo.com;Management;10000.00;500.00;USD;M001
